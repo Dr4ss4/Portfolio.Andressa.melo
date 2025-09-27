@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Andressa • Desenvolvedora Júnior</title>
+  <meta name="description" content="Portfólio moderno de Andressa — Desenvolvedora Júnior (Python, Java, C#, HTML, CSS, JavaScript, SQL). Projetos, Skills, Formação e Contato." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="logo">
+        <div class="logo-mark" aria-hidden="true"></div>
+        <span>Andressa<span style="opacity:.5">·</span>Dev</span>
+      </div>
+      <nav aria-label="Principal">
+        <ul>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#skills">Habilidades</a></li>
+          <li><a href="#formacao">Formação</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="actions">
+        <button class="theme-toggle" id="themeToggle" title="Alternar tema" aria-label="Alternar tema">☾</button>
+        <a class="btn ghost" href="https://github.com/Dr4ss4" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn primary" href="#projetos">Ver Projetos</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero container">
+      <div class="hero-grid">
+        <div>
+          <div class="kicker"><span class="dot"></span> Portfólio</div>
+          <h1>Oi, eu sou a Andressa 👋</h1>
+          <p class="lead">Meu nome é Andressa, sou desenvolvedora júnior, com destaque para as linguagens <strong>Python</strong>, <strong>Java</strong>, <strong>C#</strong>, <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong> e <strong>SQL</strong>. Nesta página você conhece um pouco de mim e do meu trabalho — e encontra links para falarmos!</p>
+          <div class="chips" aria-label="Principais stacks">
+            <span class="chip">Python</span>
+            <span class="chip">Java</span>
+            <span class="chip">C#</span>
+            <span class="chip">HTML</span>
+            <span class="chip">CSS</span>
+            <span class="chip">JavaScript</span>
+            <span class="chip">SQL</span>
+            <span class="chip">Vue</span>
+            <span class="chip">React</span>
+            <span class="chip">Node.js</span>
+            <span class="chip">PHP</span>
+            <span class="chip">Java</span>
+            <span class="chip">Git</span>
+            <span class="chip">Linux</span>
+          </div>
+          <div class="hero-actions">
+            <a class="btn primary" href="https://github.com/Dr4ss4" target="_blank" rel="noopener">Ver meu GitHub</a>
+            <a class="btn" href="#contato">Entrar em Contato</a>
+          </div>
+        </div>
+        <div class="hero-card" role="img" aria-label="Resumo de perfil">
+          <strong>Resumo rápido</strong>
+          <ul>
+            <li>Foco em back-end (Python, Java) e front-end (HTML, CSS, JS).</li>
+            <li>Experiência com análise de dados e dashboards.</li>
+            <li>Boa base de algoritmos, SQL e versionamento com Git.</li>
+          </ul>
+          <div class="chips">
+            <span class="chip">Projetos reais</span>
+            <span class="chip">Código limpo</span>
+            <span class="chip">Design responsivo</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projetos -->
+    <section id="projetos" class="container">
+      <div class="section-head">
+        <h2>Meus Projetos</h2>
+        <p>Selecione um filtro para explorar:</p>
+      </div>
+      <div class="filters" role="group" aria-label="Filtros de projetos">
+        <button class="btn small" data-filter="all">Todos</button>
+        <button class="btn small" data-filter="web">Web</button>
+        <button class="btn small" data-filter="ia">IA / Dados</button>
+        <button class="btn small" data-filter="game">Games</button>
+        <button class="btn small" data-filter="ui">UI</button>
+      </div>
+
+      <div class="grid" id="projectGrid">
+        <!-- Chat (Flask SocketIO) -->
+        <article class="card reveal" data-cat="web">
+          <div class="cover">Chat</div>
+          <div class="content">
+            <h3>Chat</h3>
+            <div class="tags">
+              <span class="tag">Flask</span><span class="tag">Socket.IO</span><span class="tag">Python</span>
+            </div>
+            <p>Aplicação de <strong>chat em tempo real</strong> usando Flask + Flask-SocketIO. Vários usuários em uma mesma rede podem trocar mensagens instantaneamente.</p>
+            <div class="meta"><span class="badge">Tempo real</span><span class="badge">WebSockets</span></div>
+            <div class="actions">
+              <a class="btn small" href="https://github.com/Dr4ss4/Flask-Chat-Application" target="_blank" aria-label="Ver código do Chat">Code</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- IA -->
+        <article class="card reveal" data-cat="ia">
+          <div class="cover">IA • Score de Crédito</div>
+          <div class="content">
+            <h3>IA</h3>
+            <div class="tags">
+              <span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">Scikit‑learn</span>
+            </div>
+            <p>Sistema de <strong>análise</strong>. Este projeto é focado na criação de um sistema de análise preditiva para um banco, com o objetivo de classificar os clientes com base no score (pontuação de crédito). Uma análise ajuda o banco a determinar quais clientes são confiáveis ​​e podem receber benefícios como crédito e empréstimos.</p>
+            <div class="meta"><span class="badge">ML</span><span class="badge">Classificação</span></div>
+            <div class="actions">
+              <a class="btn small" href="https://github.com/Dr4ss4/IA" target="_blank">Code</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Login front-end -->
+        <article class="card reveal" data-cat="ui web">
+          <div class="cover">UI • Login</div>
+          <div class="content">
+            <h3>Login front‑end</h3>
+            <div class="tags">
+              <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span>
+            </div>
+            <p>Página de login moderna e responsiva, com campos de e‑mail/usuário e senha, CTA de acesso, link “Esqueci a senha”, e rodapé minimalista com políticas.</p>
+            <div class="meta"><span class="badge">Acessível</span><span class="badge">Responsivo</span></div>
+            <div class="actions">
+              <a class="btn small" href="https://github.com/Dr4ss4/Login" data-demo="code">Code</a>
+              <a class="btn small" href="https://dr4ss4.github.io/Login/" data-demo="link">Link</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Análise de Dados -->
+        <article class="card reveal" data-cat="ia web">
+          <div class="cover">Dashboard • Vendas</div>
+          <div class="content">
+            <h3>Análise de Dados</h3>
+            <div class="tags">
+              <span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">Dashboard</span>
+            </div>
+            <p>Projeto de <strong>análise e dashboard</strong>. Desenvolvido a partir de uma planilha, com etapas de tratamento e análise dos dados. O dashboard interativo apresenta indicadores de receita, desempenho por vendedor e produto, além da comparação de metas x resultados, apoiando a identificação de tendências e a tomada de decisões estratégicas.</p>
+            <div class="meta"><span class="badge">ETL</span><span class="badge">KPIs</span></div>
+            <div class="actions">
+              <a class="btn small" href="https://github.com/Dr4ss4/An-lise-de-Dados-de-Vendas" data-demo="code">Code</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Mini Game -->
+        <article class="card reveal" data-cat="game web">
+          <div class="cover">Game • Newton</div>
+          <div class="content">
+            <h3>Mini game</h3>
+            <div class="tags">
+              <span class="tag">JS</span><span class="tag">Canvas</span><span class="tag">Pixel Art</span>
+            </div>
+            <p>Jogo em estilo <em>pixel art</em> inspirado na lenda de Newton sob a macieira. Colete maçãs, some pontos; dificuldade progressiva.</p>
+            <div class="meta"><span class="badge">Arcade</span><span class="badge">Canvas</span></div>
+            <div class="actions">
+              <a class="btn small" href="https://github.com/Dr4ss4/Game-Newton-s-Apples" data-demo="code">Code</a>
+              <a class="btn small" href="https://dr4ss4.github.io/Game-Newton-s-Apples/" data-demo="link">Link</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Previsão de Demanda -->
+        <article class="card reveal" data-cat="ia">
+          <div class="cover">Forecast • Em breve</div>
+          <div class="content">
+            <h3>Previsão de Demanda Simples</h3>
+            <p class="soon">Em breve.</p>
+            <div class="actions">
+              <a class="btn small" href="#" data-demo="code">Code</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="container">
+      <div class="section-head">
+        <h2>Minhas Skills</h2>
+        <p>Stacks e ferramentas que uso no dia a dia</p>
+      </div>
+      <div class="skills">
+        <!-- Left -->
+        <div class="skill reveal"><h4>JavaScript</h4><div class="bar"><div class="fill" style="--w:80%"></div></div></div>
+        <div class="skill reveal"><h4>TypeScript</h4><div class="bar"><div class="fill" style="--w:60%"></div></div></div>
+        <div class="skill reveal"><h4>React</h4><div class="bar"><div class="fill" style="--w:55%"></div></div></div>
+        <div class="skill reveal"><h4>Vue</h4><div class="bar"><div class="fill" style="--w:40%"></div></div></div>
+        <div class="skill reveal"><h4>Node.js</h4><div class="bar"><div class="fill" style="--w:65%"></div></div></div>
+        <div class="skill reveal"><h4>PHP</h4><div class="bar"><div class="fill" style="--w:35%"></div></div></div>
+        <div class="skill reveal"><h4>Python</h4><div class="bar"><div class="fill" style="--w:75%"></div></div></div>
+        <div class="skill reveal"><h4>Java</h4><div class="bar"><div class="fill" style="--w:70%"></div></div></div>
+        <div class="skill reveal"><h4>HTML</h4><div class="bar"><div class="fill" style="--w:90%"></div></div></div>
+        <div class="skill reveal"><h4>CSS</h4><div class="bar"><div class="fill" style="--w:85%"></div></div></div>
+        <div class="skill reveal"><h4>Git</h4><div class="bar"><div class="fill" style="--w:80%"></div></div></div>
+        <div class="skill reveal"><h4>MySQL</h4><div class="bar"><div class="fill" style="--w:70%"></div></div></div>
+        <div class="skill reveal"><h4>Linux</h4><div class="bar"><div class="fill" style="--w:55%"></div></div></div>
+      </div>
+    </section>
+
+<!-- Formação -->
+<section id="formacao" class="container">
+  <div class="section-head">
+    <h2>Formação</h2>
+    <p>Resumo acadêmico</p>
+  </div>
+  <div class="timeline">
+    <div class="edu reveal">
+      <strong>Análise e Desenvolvimento de Sistemas – UNIFOR</strong>
+      <div class="when">2022 – Previsão: 2025</div>
+      <div>Cursando</div>
+    </div>
+    <div class="edu reveal">
+      <strong>Curso de Análise de Dados – Hashtag Treinamentos</strong>
+      <div class="when">2025</div>
+      <div>Cursando</div>
+    </div>
+    <div class="edu reveal">
+      <strong>Inglês – CLM</strong>
+      <div class="when">2024 – Previsão: 2027</div>
+      <div>Cursando</div>
+    </div>
+    <div class="edu reveal">
+      <strong>Técnico em Desenvolvedor de Sistemas – SEVEN</strong>
+      <div class="when">2024 – 2025</div>
+      <div>Concluído</div>
+    </div>
+    <div class="edu reveal">
+      <strong>Técnico em Desenvolvedor de Web Sites – SEVEN</strong>
+      <div class="when">2024 – 2025</div>
+      <div>Concluído</div>
+    </div>
+    <div class="edu reveal">
+      <strong>Curso C# (Com LINQ, .NET 7.0, .NET 8.0, .NET 9.0) – UDEMY</strong>
+      <div class="when">2025</div>
+      <div>Concluído</div>
+    </div>
+    <div class="edu reveal">
+      <strong>Curso de Python 3 do Básico ao Avançado – UDEMY</strong>
+      <div class="when">2024 – 2025</div>
+      <div>Concluído</div>
+    </div>
+    <div class="edu reveal">
+      <strong>Técnico em Automação Industrial – EEEP Raimundo Célio Rodrigues</strong>
+      <div class="when">2019 – 2021</div>
+      <div>Concluído</div>
+    </div>
+    <div class="edu reveal">
+      <strong>Curso de Suporte em TI – IJOVEM</strong>
+      <div class="when">Maio – Julho/2024</div>
+      <div>Concluído</div>
+    </div>
+  </div>
+</section>
+
+    <!-- Contato -->
+    <section id="contato" class="container">
+      <div class="section-head">
+        <h2>Entre em Contato</h2>
+        <p>Fale comigo por e‑mail ou redes</p>
+      </div>
+      <div class="contact-wrap">
+        <div class="contact-card reveal">
+          <h3>Links diretos</h3>
+          <p><strong>Email</strong><br><a href="mailto:andressaoliveiraprtr@gmail.com" id="mailLink">andressaoliveiraprtr@gmail.com</a> <button class="btn small" id="copyMail">Copiar</button></p>
+          <p><strong>GitHub</strong><br><a href="https://github.com/Dr4ss4" target="_blank" rel="noopener">Dr4ss4</a></p>
+          <p><strong>LinkedIn</strong><br><a href="https://www.linkedin.com/in/andressa-oliveira-desenvolvedora-junior/" target="_blank" rel="noopener">Andressa-dev</a></p>
+        </div>
+        <form class="contact-card reveal" id="contactForm" autocomplete="on">
+          <h3>Enviar Email</h3>
+          <div class="row">
+            <p>
+              <label for="nome">Nome</label><br>
+              <input id="nome" name="nome" placeholder="Seu nome" required />
+            </p>
+            <p>
+              <label for="email">Seu email</label><br>
+              <input id="email" name="email" type="email" placeholder="voce@email.com" required />
+            </p>
+          </div>
+          <p>
+            <label for="mensagem">Mensagem</label><br>
+            <textarea id="mensagem" name="mensagem" placeholder="Como posso te ajudar?" required></textarea>
+          </p>
+          <div class="actions">
+            <button type="submit" class="btn primary">Enviar</button>
+            <span class="success" id="sentFlag">Enviado ✅</span>
+          </div>
+          <p class="hint">O formulário abre seu aplicativo de e‑mail com a mensagem pronta.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div style="display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap">
+        <small>© <span id="year"></span> Andressa. Todos os direitos reservados.</small>
+        <small>Feito com HTML • CSS • JavaScript.</small>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal básico para "Code/Link" (placeholders) -->
+  <dialog id="modal" style="border:none; border-radius:16px; padding:0;">
+    <div style="padding:18px 18px 10px; border-bottom:1px solid var(--border); display:flex; align-items:center; justify-content:space-between">
+      <strong id="modalTitle">Projeto</strong>
+      <button class="btn small" id="closeModal">Fechar</button>
+    </div>
+    <div style="padding:18px" id="modalBody">
+      <p>Este botão é um <em>placeholder</em>. Substitua os links <strong>Code</strong>/<strong>Link</strong> pelo repositório e/ou deploy do projeto quando desejar.</p>
+      <ul class="muted">
+        <li>Exemplo (Code): <code>https://github.com/Dr4ss4/&lt;repo&gt;</code></li>
+        <li>Exemplo (Link): <code>https://andressa.dev/&lt;projeto&gt;</code></li>
+      </ul>
+    </div>
+  </dialog>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
